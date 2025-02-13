@@ -35,4 +35,18 @@ console.log(JSON.stringify(inventory.items));
 inventory.removeFirstItem();
 console.log(JSON.stringify(inventory.items));
 
+// Task 7
+let employees = [
+    { name: "Alice", position: "Developer", salary: 70000},
+    { name: "Bob", postion: "Designer", salary: 60000},
+    { name: "Charlie", position: "Manager", salary: 90000}
+];
+
+function findEmployee(employees, name) {
+    return employees.find(employee => employee.name === name);
+}
+
+console.log(findEmployee(employees, "Bob"));
+
+
 
